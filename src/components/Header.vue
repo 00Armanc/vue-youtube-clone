@@ -1,0 +1,43 @@
+<template>
+    <div class="Header">
+        <div class="Header-container">
+            <Start />
+            <Center />
+            <End />
+        </div>
+    </div>
+</template>  
+
+<script>
+import Start from './HeaderSteps/Start'
+import Center from './HeaderSteps/Center'
+import End from './HeaderSteps/End'
+
+export default {
+    name: "Header",
+    components: {
+        Start,
+        Center,
+        End
+    }
+}
+</script>
+
+<style>
+/* Header styles */
+.Header {
+    width: 100%;
+    height: 56px;
+    background: #F9F9F9;
+    position: fixed;
+    top: 0;
+}
+.Header-container {
+    margin: 0 auto;
+    width: calc(100% - 19px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+</style>
