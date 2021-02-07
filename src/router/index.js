@@ -10,7 +10,7 @@ import Library from '../views/Library'
 Vue.use(VueRouter)
 const routes = [
     { 
-        path: '/',
+        path: '/home',
         name: 'Home', 
         component: Home 
     },

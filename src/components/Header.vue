@@ -28,7 +28,7 @@ export default {
 .Header {
     width: 100%;
     height: 56px;
-    background: #F9F9F9;
+    background: #FFFFFF;
     position: fixed;
     top: 0;
 }

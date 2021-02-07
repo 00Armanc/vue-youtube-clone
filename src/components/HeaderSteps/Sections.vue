@@ -34,6 +34,7 @@ export default {
 </script>
 
 <style>
+
 .Sections {
     height: calc(100% - 56px);
     width: 72px;

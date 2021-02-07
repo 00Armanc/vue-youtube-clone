@@ -1,21 +1,32 @@
 <template>
   <div id="app" class="container">
     <Header />
-    <Sections />
-    <router-view ></router-view>
+    <div class="main-content">
+      <Sections v-if="isOpen" />
+      <MoreSections v-else />
+      
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
 import Sections from './components/HeaderSteps/Sections'
+import MoreSections from './components/HeaderSteps/MoreSections'
 // import MainContainer from './components/MainContainer.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Sections
+    Sections,
+    MoreSections
+  },
+  computed: {
+    isOpen() {
+      return this.$store.state.isOpen
+    }
   }
 }
 </script>
@@ -29,5 +40,4 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-
 </style>
