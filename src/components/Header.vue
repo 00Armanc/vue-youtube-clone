@@ -31,6 +31,7 @@ export default {
     background: #FFFFFF;
     position: fixed;
     top: 0;
+    z-index: 999;
 }
 .Header-container {
     margin: 0 auto;

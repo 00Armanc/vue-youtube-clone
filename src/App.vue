@@ -1,12 +1,12 @@
 <template>
   <div id="app" class="container">
     <Header />
-    <div class="main-content">
+    <MainContainer>
       <Sections v-if="isOpen" />
       <MoreSections v-else />
-      
+
       <router-view></router-view>
-    </div>
+    </MainContainer>
   </div>
 </template>
 
@@ -14,14 +14,15 @@
 import Header from './components/Header'
 import Sections from './components/HeaderSteps/Sections'
 import MoreSections from './components/HeaderSteps/MoreSections'
-// import MainContainer from './components/MainContainer.vue'
+import MainContainer from './components/MainContainer.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     Sections,
-    MoreSections
+    MoreSections,
+    MainContainer,
   },
   computed: {
     isOpen() {
