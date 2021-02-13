@@ -4,7 +4,6 @@
     <MainContainer>
       <Sections v-if="isOpen" />
       <MoreSections v-else />
-
       <router-view></router-view>
     </MainContainer>
   </div>

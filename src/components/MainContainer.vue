@@ -17,12 +17,13 @@ export default {
 
 <style>
 .main-container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: calc(100% - 240px);
-    height: 2000px;
-    position: absolute;
+    height: auto;
+    position: fixed;
     top: 56px;
     right: 0; 
+    overflow: auto;
 }
 .big {
     width: calc(100% - 72px);

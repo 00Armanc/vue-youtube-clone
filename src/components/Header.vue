@@ -27,7 +27,7 @@ export default {
 /* Header styles */
 .Header {
     width: 100%;
-    height: 56px;
+    height: var(--headerHeight);
     background: #FFFFFF;
     position: fixed;
     top: 0;
