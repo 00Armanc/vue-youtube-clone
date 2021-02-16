@@ -1,5 +1,5 @@
 <template>
-    <div class="more-sections">
+    <div class="sidebar">
         <div class="step-one">
             <div class="step-one-first">
                 <router-link to="Home" tag="button">
@@ -149,31 +149,32 @@ export default {
 
 <style scoped>
 /* ScrollBar Styles */
-.more-sections::-webkit-scrollbar-track{
+.sidebar::-webkit-scrollbar-track{
     background-color: inherit;
 }
-
-.more-sections::-webkit-scrollbar{
+.sidebar::-webkit-scrollbar{
 	width: 7px;
 	background-color: #F5F5F5;
 }
-.more-sections::-webkit-scrollbar-thumb{
+.sidebar::-webkit-scrollbar-thumb{
     background-color: inherit;
 }
-.more-sections:hover::-webkit-scrollbar-thumb {
+.sidebar:hover::-webkit-scrollbar-thumb {
 	background-color: rgb(201, 203, 204);
 }
-.more-sections {
+.sidebar {
     position: fixed;
     left: 0;
-    bottom: 0;
-    height: calc(100% - 56px);
-    width: 240px;  
+    top: var(--headerHeight);
+    height: calc(100% - var(--headerHeight));
+    
+    width: 240px;
     background: #FFFFFF;
     overflow-y: auto;
 }
 /* Step One */
 .step-one {
+    width: var(--largeSidebar);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -222,6 +223,7 @@ button > p {
 
 /* Step Two */
 .step-two > h3 {
+    width: var(--largeSidebar);
     color: #606060;
     font-size: 14px;
     padding: 15px 24px;
@@ -266,6 +268,9 @@ button > p {
 }
 
 /* Step Three */
+.step-three {
+    width: var(--largenSidebar);
+}
 .step-three > h3 {
     color: #606060;
     font-size: 14px;

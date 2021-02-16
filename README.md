@@ -22,4 +22,7 @@ TODOS
 
 - [X] Css yüklemeleri ve renklerin ayarlanması
 - [X] Vue kütüphanelerin indirilmesi
-- [] Header tasarımın tamamlanması
+- [X] Header tasarımın tamamlanması
+- [X] Sidebar tasarımın tamamlanması
+- [X] Content tasarımın tamamlanması 
+- [] Footer tasarımın tamamlanması

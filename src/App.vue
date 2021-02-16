@@ -2,8 +2,8 @@
   <div id="app" class="container">
     <Header />
     <MainContainer>
-      <Sections v-if="isOpen" />
-      <MoreSections v-else />
+      <Sidebar v-if="isOpen" />
+      <LargeSidebar v-else />
       <router-view></router-view>
     </MainContainer>
   </div>
@@ -11,16 +11,16 @@
 
 <script>
 import Header from './components/Header'
-import Sections from './components/HeaderSteps/Sections'
-import MoreSections from './components/HeaderSteps/MoreSections'
+import Sidebar from './components/HeaderSteps/Sidebar'
+import LargeSidebar from './components/HeaderSteps/LargeSidebar'
 import MainContainer from './components/MainContainer.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Sections,
-    MoreSections,
+    Sidebar,
+    LargeSidebar,
     MainContainer,
   },
   computed: {

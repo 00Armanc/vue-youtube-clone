@@ -1,5 +1,6 @@
 <template>
-    <div class="Sections">
+    <div class="small-bg">
+        <div class="Sections">
         <router-link to="Home" tag="div" class="section home">
             <button>
                 <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" ><g><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8"></path></g></svg>
@@ -25,6 +26,7 @@
             </button>
         </router-link>
     </div>
+    </div>
 </template>
 
 <script>
@@ -34,11 +36,15 @@ export default {
 </script>
 
 <style>
-
+.small-bg {
+    width: var(--smallSidebar);
+    height: calc(100% - var(--headerHeight));
+}
 .Sections {
     height: calc(100% - 56px);
-    width: 72px;
+    width: var(--smallSidebar);
     position: fixed;
+    top: var(--headerHeight);
     left: 0;
     bottom: 0;
 

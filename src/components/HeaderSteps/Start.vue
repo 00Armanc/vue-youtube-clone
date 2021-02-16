@@ -44,7 +44,6 @@ export default {
     color: var(--yt-spec-icon-active-other);
     position: relative;
     cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: center;
